@@ -1,0 +1,17 @@
+# IDE metadata
+.idea
+
+# Dev notes
+~*
+
+# Working directory
+/listing
+# Stage directory (copied and renamed MP3 files)
+/stage
+
+# Downloaded packages
+node_modules
+
+# Configuration files
+/dl-helper.env
+/dl-helper/config.ts

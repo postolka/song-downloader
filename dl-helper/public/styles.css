@@ -1,0 +1,109 @@
+body {
+	font-family: Lucida, sans-serif;
+	font-size: 10pt;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr {
+	line-height: 1.35rem;
+}
+
+th.no,
+td.no,
+th.duration,
+td.duration {
+	font-family: "Lucida Console", monospace;
+	text-align: right;
+	padding: 0 .2rem;
+}
+
+td.no {
+	color: #3f3f3f;
+	opacity: .1;
+}
+
+tr th {
+	text-align: left;
+	border-bottom: 2px solid #7f7f7f;
+}
+
+td.status {
+	text-align: center;
+	font-weight: bold;
+}
+
+tr.done td.status {
+	color: #339922;
+	font-size: 1rem;
+}
+
+tr.failed td.status {
+	font-size: 1.15rem;
+	color: #990000;
+	text-shadow: 0 0 .2rem #ff0000;
+}
+
+td.status {
+	text-align: center;
+	width: 1.5rem;
+}
+
+td.actions {
+	width: 3rem;
+}
+
+span.actions {
+	width: 100%;
+	display: none;
+	flex-flow: row;
+	gap: .2rem;
+}
+.btn {
+	border: 1px solid;
+	padding: .1rem;
+	font-size: .75rem;
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border-radius: .2rem;
+}
+
+.btn.success {
+	border-color: #339922;
+	background: #aaff99;
+	color: #0f7708;
+}
+
+.btn.error {
+	border-color: #992222;
+	background: #ff9999;
+	color: #770808;
+}
+
+tr:hover td {
+	background: #f7f7f7
+}
+
+tr:hover td.actions span.actions {
+	display: flex;
+}
+
+tr:hover td.no {
+	opacity: .5;
+}
+
+tr.done td.name a {
+	color: #1f1f1f;
+	opacity: .5;
+}
+
+tr.failed td.name a {
+	color: #3f1f1f;
+	opacity: .8;
+}
